@@ -23,8 +23,6 @@ const CONFIG = {
   INSTAGRAM_USER: "elcrujientelight",
   TIKTOK_USER: "elcrujientelight",
 
-  TELEFONO: "322 536 4471 · 300 476 9747",
-
   // Pedidos 100% virtuales (WhatsApp + domicilio): no hay local físico,
   // por eso se muestra zona de cobertura en vez de una dirección exacta.
   COBERTURA: "Domicilios en toda Bogotá y periferia (sujeto a costo adicional)",
@@ -43,8 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
    Aplica los datos de CONFIG en todos los elementos marcados
    --------------------------------------------------------- */
 function aplicarConfiguracion() {
-  const waUrl = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(CONFIG.WHATSAPP_MENSAJE)}`;
+  // Cada botón puede llevar su propio data-mensaje (ej: el producto que
+  // representa) para que el cliente llegue a WhatsApp con el pedido ya
+  // escrito. Si no lo tiene, usa el mensaje genérico de CONFIG.
   document.querySelectorAll(".js-whatsapp-link").forEach((el) => {
+    const mensaje = el.dataset.mensaje || CONFIG.WHATSAPP_MENSAJE;
+    const waUrl = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
     el.setAttribute("href", waUrl);
     el.setAttribute("target", "_blank");
     el.setAttribute("rel", "noopener");

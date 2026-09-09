@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>El Crujiente Light | Lechona Colombiana a Domicilio y para Eventos</title>
-<meta name="description" content="El Crujiente Light: lechona colombiana artesanal para cumpleaños, reuniones familiares y eventos empresariales. Pide por WhatsApp y recíbela crujiente, sabrosa y a tiempo.">
-<meta name="keywords" content="lechona, lechona colombiana, lechona para eventos, lechona para cumpleaños, lechona a domicilio, pedir lechona">
+<title>El Crujiente Light | Lechona a Domicilio en Bogotá y para Eventos</title>
+<meta name="description" content="El Crujiente Light: lechona colombiana artesanal a domicilio en Bogotá y periferia, para cumpleaños, reuniones familiares y eventos empresariales. Pide por WhatsApp y recíbela crujiente, sabrosa y a tiempo.">
+<meta name="keywords" content="lechona, lechona colombiana, lechona bogota, lechona para eventos, lechona para cumpleaños, lechona a domicilio, pedir lechona">
 <link rel="canonical" href="https://www.elcrujientelight.com/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="El Crujiente Light | Tradición que Cruje">
-<meta property="og:description" content="Lechona colombiana artesanal para tus eventos y antojos. Pide por WhatsApp.">
+<meta property="og:description" content="Lechona colombiana artesanal a domicilio en Bogotá, para tus eventos y antojos. Pide por WhatsApp.">
 <meta property="og:image" content="lechona-entera-bandeja.jpg">
 <meta property="og:locale" content="es_CO">
 
@@ -20,6 +20,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "El Crujiente Light",
+  "description": "Lechona colombiana artesanal a domicilio en Bogotá y periferia, para eventos, cumpleaños y reuniones familiares.",
+  "servesCuisine": "Colombiana",
+  "priceRange": "$14.000 - $780.000",
+  "telephone": "+573225364471",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bogotá",
+    "addressCountry": "CO"
+  },
+  "areaServed": "Bogotá y periferia",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  },
+  "url": "https://www.elcrujientelight.com/",
+  "image": "https://www.elcrujientelight.com/lechona-corte-crujiente.jpg"
+}
+</script>
 </head>
 <body>
 
@@ -70,7 +96,7 @@
 <section class="hero" id="inicio">
   <div class="hero__media">
     <div class="hero__img">
-      <img class="real-photo" src="hero-ambientacion.jpg" alt="Lechona colombiana crujiente, dorada y jugosa — El Crujiente Light">
+      <img class="real-photo" src="hero-ambientacion.jpg" alt="Lechona colombiana crujiente, dorada y jugosa — El Crujiente Light" width="1088" height="1445">
     </div>
     <div class="hero__scrim"></div>
   </div>
@@ -81,6 +107,7 @@
     <h1 class="hero__title">Tradición<br>que cruje.</h1>
     <p class="hero__lead">El sabor de una buena lechona se reconoce desde el primer crujido.</p>
     <p class="hero__script">"El sabor que te provoca, con el cuidado que tu cuerpo merece."</p>
+    <p class="hero__meta">Desde $14.000 por porción · Domicilios en Bogotá y periferia</p>
     <div class="hero__actions">
       <a href="#" class="btn btn--primary js-whatsapp-link">Pedir por WhatsApp</a>
       <a href="#menu" class="btn btn--ghost">Ver menú</a>
@@ -166,7 +193,7 @@
 <section class="featured">
   <div class="container featured__grid">
     <div class="featured__media">
-      <img class="real-photo" src="lechona-corte-crujiente.jpg" alt="Corte de lechona El Crujiente Light mostrando la piel crujiente y el relleno jugoso">
+      <img class="real-photo" src="lechona-corte-crujiente.jpg" alt="Corte de lechona El Crujiente Light mostrando la piel crujiente y el relleno jugoso" width="899" height="1599" loading="lazy">
     </div>
     <div class="featured__content">
       <p class="featured__eyebrow">La protagonista</p>
@@ -177,7 +204,7 @@
         <span>Cocción lenta</span>
         <span>Piel dorada</span>
       </div>
-      <a href="#" class="btn btn--primary js-whatsapp-link">Pedir ahora</a>
+      <a href="#menu" class="btn btn--primary">Ver precios y pedir</a>
     </div>
   </div>
 </section>
@@ -189,6 +216,7 @@
   <div class="container">
     <p class="section-kicker">Menú</p>
     <h2 class="menu-section__title">Escoge tu porción</h2>
+    <p class="menu-section__hint">¿No sabes cuánto pedir? <strong>1–4 personas</strong> → pestaña "Porciones" · <strong>Reunión o grupo</strong> → "Lechona" por cojín · <strong>Evento grande</strong> → cotiza en "Eventos".</p>
 
     <div class="menu-tabs" id="menuTabs">
       <button class="menu-tabs__btn is-active" data-target="lechona">Lechona</button>
@@ -199,7 +227,7 @@
     <div class="menu-panel is-active" id="lechona">
       <div class="precio-cojin">
         <div class="precio-cojin__media">
-          <img class="real-photo" src="lechona-entera-limon.png" alt="Lechona por cojín — El Crujiente Light">
+          <img class="real-photo" src="lechona-entera-limon.jpg" alt="Lechona por cojín — El Crujiente Light" width="1088" height="1445" loading="lazy">
         </div>
         <div class="precio-cojin__body">
           <h3>Lechona por cojín</h3>
@@ -222,7 +250,7 @@
               </tbody>
             </table>
           </div>
-          <a href="#" class="btn btn--primary js-whatsapp-link">Pedir por WhatsApp</a>
+          <a href="#" class="btn btn--primary js-whatsapp-link" data-mensaje="Hola, quiero pedir lechona por cojín de El Crujiente Light. Necesito ___ porciones.">Pedir por WhatsApp</a>
         </div>
       </div>
     </div>
@@ -231,27 +259,27 @@
       <div class="menu-grid">
         <div class="menu-card">
           <div class="menu-card__img">
-            <img class="real-photo" src="porciones-empacadas-1.jpg" alt="Porción individual de lechona empacada — El Crujiente Light">
+            <img class="real-photo" src="porciones-empacadas-1.jpg" alt="Porción individual de lechona empacada — El Crujiente Light" width="1600" height="1200" loading="lazy">
           </div>
           <div class="menu-card__body">
             <h3>Porción individual</h3>
-            <p>Lechona, arroz e insulso en porción personal de 300 g.</p>
+            <p>Tu antojo de lechona crujiente, listo para llevar: 300 g de puro sabor en cada empaque.</p>
             <div class="menu-card__footer">
               <span class="menu-card__price">$15.000</span>
-              <a href="#" class="btn btn--small btn--primary js-whatsapp-link">Pedir</a>
+              <a href="#" class="btn btn--small btn--primary js-whatsapp-link" data-mensaje="Hola, quiero pedir la Porción individual ($15.000) de El Crujiente Light.">Pedir</a>
             </div>
           </div>
         </div>
         <div class="menu-card">
           <div class="menu-card__img">
-            <img class="real-photo" src="porciones-empacadas-2.jpg" alt="Porción familiar de lechona empacada — El Crujiente Light">
+            <img class="real-photo" src="porciones-empacadas-2.jpg" alt="Porción familiar de lechona empacada — El Crujiente Light" width="1600" height="1200" loading="lazy">
           </div>
           <div class="menu-card__body">
             <h3>Porción familiar</h3>
-            <p>Pensada para compartir entre 4 personas: 4 porciones de 300 g c/u.</p>
+            <p>Para compartir el crujido en casa: 4 porciones de 300 g, a precio especial por cantidad.</p>
             <div class="menu-card__footer">
               <span class="menu-card__price">$56.000 <small>($14.000 c/u)</small></span>
-              <a href="#" class="btn btn--small btn--primary js-whatsapp-link">Pedir</a>
+              <a href="#" class="btn btn--small btn--primary js-whatsapp-link" data-mensaje="Hola, quiero pedir la Porción familiar ($56.000 — 4 porciones de 300 g) de El Crujiente Light.">Pedir</a>
             </div>
           </div>
         </div>
@@ -262,13 +290,13 @@
       <div class="menu-grid">
         <div class="menu-card">
           <div class="menu-card__img">
-            <img class="real-photo" src="galeria-eventos.jpg" alt="Montaje de El Crujiente Light para eventos">
+            <img class="real-photo" src="galeria-eventos.jpg" alt="Montaje de El Crujiente Light para eventos" width="896" height="1190" loading="lazy">
           </div>
           <div class="menu-card__body">
             <h3>Paquete para eventos</h3>
             <p>Lechona por cantidad de personas, con montaje incluido. Mismo precio por porciones que en la pestaña "Lechona" — cuéntanos cuántos son y te cotizamos.</p>
             <div class="menu-card__footer">
-              <a href="#" class="btn btn--small btn--primary js-whatsapp-link">Cotizar</a>
+              <a href="#" class="btn btn--small btn--primary js-whatsapp-link" data-mensaje="Hola, quiero cotizar lechona para mi evento. Fecha: ___ / N.º de invitados: ___ / Tipo de evento: ___">Cotizar</a>
             </div>
           </div>
         </div>
@@ -282,7 +310,7 @@
 <!-- ========================================= -->
 <section class="antojo">
   <div class="antojo__media">
-    <img class="real-photo" src="lechona-corte-crujiente.jpg" alt="Primer plano de la piel crujiente de la lechona El Crujiente Light" style="object-position: 65% 20%;">
+    <img class="real-photo" src="lechona-corte-crujiente.jpg" alt="Primer plano de la piel crujiente de la lechona El Crujiente Light" style="object-position: 65% 20%;" width="899" height="1599" loading="lazy">
   </div>
   <div class="antojo__scrim"></div>
   <div class="antojo__content container">
@@ -305,7 +333,7 @@
     <div class="eventos__heading">
       <p class="section-kicker section-kicker--dark">Eventos</p>
       <h2>Tu evento merece algo que todos recuerden.</h2>
-      <a href="#" class="btn btn--primary js-whatsapp-link">Cotizar mi evento</a>
+      <a href="#" class="btn btn--primary js-whatsapp-link" data-mensaje="Hola, quiero cotizar lechona para mi evento. Fecha: ___ / N.º de invitados: ___ / Tipo de evento: ___">Cotizar mi evento</a>
     </div>
     <div class="eventos__grid">
       <div class="eventos__ticket">
@@ -344,12 +372,12 @@
     <p class="section-kicker">Galería</p>
     <h2>Así se ve —y se disfruta— El Crujiente Light</h2>
     <div class="galeria__grid">
-      <div class="galeria__item"><img class="real-photo" src="lechona-entera-limon.png" alt="Lechona entera — El Crujiente Light"></div>
-      <div class="galeria__item"><img class="real-photo" src="porciones-empacadas-1.jpg" alt="Porciones de lechona empacadas — El Crujiente Light"></div>
-      <div class="galeria__item"><img class="real-photo" src="preparacion-real.jpg" alt="Preparación y servido de la lechona — El Crujiente Light"></div>
-      <div class="galeria__item"><img class="real-photo" src="lechona-corte-crujiente.jpg" alt="Presentación del corte de lechona — El Crujiente Light"></div>
-      <div class="galeria__item"><img class="real-photo" src="galeria-eventos.jpg" alt="Montaje de El Crujiente Light en un evento"></div>
-      <div class="galeria__item"><img class="real-photo" src="galeria-clientes.jpg" alt="Clientes disfrutando la lechona de El Crujiente Light"></div>
+      <div class="galeria__item"><img class="real-photo" src="lechona-entera-limon.jpg" alt="Lechona entera — El Crujiente Light" width="1088" height="1445" loading="lazy"></div>
+      <div class="galeria__item"><img class="real-photo" src="porciones-empacadas-1.jpg" alt="Porciones de lechona empacadas — El Crujiente Light" width="1600" height="1200" loading="lazy"></div>
+      <div class="galeria__item"><img class="real-photo" src="preparacion-real.jpg" alt="Preparación y servido de la lechona — El Crujiente Light" width="848" height="478" loading="lazy"></div>
+      <div class="galeria__item"><img class="real-photo" src="lechona-corte-crujiente.jpg" alt="Presentación del corte de lechona — El Crujiente Light" width="899" height="1599" loading="lazy"></div>
+      <div class="galeria__item"><img class="real-photo" src="galeria-eventos.jpg" alt="Montaje de El Crujiente Light en un evento" width="896" height="1190" loading="lazy"></div>
+      <div class="galeria__item"><img class="real-photo" src="galeria-clientes.jpg" alt="Clientes disfrutando la lechona de El Crujiente Light" width="1195" height="896" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -436,7 +464,7 @@
 <footer class="footer">
   <div class="container footer__inner">
     <div class="footer__brand">
-      <img class="footer__logo-img" src="logo.png" alt="El Crujiente Light — Perniles caseros y lechonas bajas en grasa y sodio" width="714" height="646">
+      <img class="footer__logo-img" src="logo.png" alt="El Crujiente Light — Perniles caseros y lechonas bajas en grasa y sodio" width="714" height="646" loading="lazy">
       <p>Tradición que cruje.</p>
     </div>
     <div class="footer__links">

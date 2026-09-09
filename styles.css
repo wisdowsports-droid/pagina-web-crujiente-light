@@ -357,6 +357,14 @@ section { position: relative; }
   color: rgba(251,241,222,0.68);
   margin-bottom: 1.8em;
 }
+.hero__meta {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--dorado);
+  margin-bottom: 1.6em;
+}
 .hero__actions { display: flex; flex-wrap: wrap; gap: 16px; }
 
 /* ---------- Sello artesanal (estampilla de marca) ---------- */
@@ -603,7 +611,14 @@ section { position: relative; }
    MENU SECTION
    ========================================================= */
 .menu-section { padding: 20px 0 110px; background: var(--crema); }
-.menu-section__title { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 0.9em; }
+.menu-section__title { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 0.4em; }
+.menu-section__hint {
+  font-size: 0.92rem;
+  color: rgba(43,23,16,0.7);
+  max-width: 62ch;
+  margin-bottom: 1.6em;
+}
+.menu-section__hint strong { color: var(--vino-oscuro); }
 
 .menu-tabs {
   display: flex;

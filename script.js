@@ -20,8 +20,7 @@ const CONFIG = {
   // Mensaje que se abrirá automáticamente en WhatsApp.
   WHATSAPP_MENSAJE: "Hola, quiero hacer un pedido de lechona El Crujiente Light.",
 
-  INSTAGRAM_USER: "elcrujientelight",
-  TIKTOK_USER: "elcrujientelight",
+  TIKTOK_USER: "crujientelight",
 
   // Pedidos 100% virtuales (WhatsApp + domicilio): no hay local físico,
   // por eso se muestra zona de cobertura en vez de una dirección exacta.
@@ -63,10 +62,6 @@ function aplicarConfiguracion() {
   document.querySelectorAll(".js-whatsapp-display").forEach((el) => {
     el.textContent = formatearNumeroVisible(CONFIG.WHATSAPP_NUMBER);
   });
-
-  const igUrl = `https://instagram.com/${CONFIG.INSTAGRAM_USER}`;
-  document.querySelectorAll(".js-instagram-link").forEach((el) => el.setAttribute("href", igUrl));
-  document.querySelectorAll(".js-instagram-handle").forEach((el) => (el.textContent = `@${CONFIG.INSTAGRAM_USER}`));
 
   const ttUrl = `https://tiktok.com/@${CONFIG.TIKTOK_USER}`;
   document.querySelectorAll(".js-tiktok-link").forEach((el) => el.setAttribute("href", ttUrl));

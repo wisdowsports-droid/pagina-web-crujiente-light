@@ -38,8 +38,7 @@ const CONFIG = {
   NOMBRE_MARCA: "El Crujiente Light",
   WHATSAPP_NUMBER: "573000000000",   // Número real con indicativo de país, sin espacios ni signos
   WHATSAPP_MENSAJE: "Hola, quiero hacer un pedido de lechona El Crujiente Light.",
-  INSTAGRAM_USER: "elcrujientelight",
-  TIKTOK_USER: "elcrujientelight",
+  TIKTOK_USER: "crujientelight",
   TELEFONO: "[TELEFONO]",
   DIRECCION: "[DIRECCIÓN]",
   CIUDAD: "[CIUDAD]",
@@ -47,7 +46,7 @@ const CONFIG = {
 };
 ```
 
-Al guardar y recargar la página, **todos** los botones de WhatsApp, enlaces de Instagram y TikTok se actualizan automáticamente en toda la página (header, hero, menú, eventos, CTA final, botón flotante, footer, etc.), porque todos apuntan a esta única fuente de datos.
+Al guardar y recargar la página, **todos** los botones de WhatsApp y el enlace de TikTok se actualizan automáticamente en toda la página (header, hero, menú, eventos, CTA final, botón flotante, footer, etc.), porque todos apuntan a esta única fuente de datos.
 
 Ya están configurados los dos números reales de la marca como WhatsApp:
 - `WHATSAPP_NUMBER`: **322 536 4471** — se usa en todos los botones "Pedir por WhatsApp" de la página.

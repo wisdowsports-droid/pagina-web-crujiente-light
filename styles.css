@@ -288,7 +288,6 @@ section { position: relative; }
 .hero__img .real-photo {
   filter: saturate(1.25) contrast(1.15) brightness(0.94) sepia(0.08);
   object-position: 50% 22%;
-  animation: heroZoom 22s ease-in-out infinite alternate;
 }
 @keyframes heroZoom {
   from { transform: scale(1); }

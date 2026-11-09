@@ -840,6 +840,13 @@ section { position: relative; }
 @media (max-width: 640px) {
   .testimonios__grid { grid-template-columns: 1fr; }
 }
+/* Si la última reseña queda sola en su fila, ocupa todo el ancho */
+@media (min-width: 1081px) {
+  .testimonio:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
+}
+@media (min-width: 641px) and (max-width: 1080px) {
+  .testimonio:last-child:nth-child(2n+1) { grid-column: 1 / -1; }
+}
 
 .google-reviews {
   margin-top: 28px;
